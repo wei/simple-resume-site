@@ -1,0 +1,31 @@
+{
+  "name": "simple-resume-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite-react-ssg dev",
+    "build": "vite-react-ssg build",
+    "preview": "vite preview",
+    "lint": "biome check",
+    "lint:fix": "npm run lint -- --write",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12"
+  },
+  "lint-staged": {
+    "*": "npm run lint:fix -- --no-errors-on-unmatched"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.4",
+    "vite-react-ssg": "^0.8.8"
+  }
+}
