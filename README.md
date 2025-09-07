@@ -26,9 +26,8 @@ A fast, responsive, SEO-friendly single‑page resume website template powered b
 1. Make a new repo from [this template](https://github.com/new?template_name=simple-resume&template_owner=wei)
 3. Content: edit `site-data.json`
 4. Profile image: replace `public/profile.jpeg` with your own profile image (200×200 recommended)
-5. Style: edit Tailwind styles in `src/style.css` and within component files as needed
 
-### Generate `site-data.json` using AI from LinkedIn
+### Generate `site-data.json` from LinkedIn using AI
 
 1. LinkedIn Profile → More → Save as PDF
 2. Download [site-data.json](./site-data.json)
