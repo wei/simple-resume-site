@@ -1,5 +1,5 @@
 import type { NavItem, Personal } from "../types";
-import { GlobeIcon, LinkedInIcon, MailIcon } from "./Icons";
+import { GitHubIcon, GlobeIcon, LinkedInIcon, MailIcon } from "./Icons";
 
 interface SidebarProps {
   personal: Personal;
@@ -75,6 +75,20 @@ function Sidebar({ personal, navItems }: SidebarProps) {
             >
               <span className="sr-only">Email</span>
               <MailIcon className="size-5" />
+            </a>
+          </li>
+        )}
+        {personal.github && (
+          <li className="mr-5 shrink-0">
+            <a
+              className="block hover:text-slate-800 transition-colors"
+              href={personal.github}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="GitHub (opens in a new tab)"
+            >
+              <span className="sr-only">GitHub</span>
+              <GitHubIcon className="size-5" />
             </a>
           </li>
         )}
